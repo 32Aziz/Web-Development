@@ -1,0 +1,194 @@
+/* Main hero section
+   Changed background to Dark Navy from your palette
+   Added larger spacing and hidden overflow for cleaner design */
+.hero-section {
+  background: #0D1B2A;
+  padding: 40px;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+/* Main row spacing */
+.hero-row {
+  min-height: 60vh;
+}
+
+/* Left side content */
+.hero-left {
+  color: #FFFFFF;
+  padding-right: 30px;
+}
+
+/* Main heading
+   Removed the old big top margin
+   Increased readability and made it more balanced */
+.hero-left h1 {
+  font-size: 3.4rem;
+  font-weight: 800;
+  line-height: 1.2;
+  margin-bottom: 20px;
+  color: #FFFFFF;
+}
+
+/* Accent word inside heading
+   Uses your Accent Gold */
+.hero-left h1 span {
+  color: #F5A623;
+}
+
+/* Description text
+   Uses Soft White from your palette */
+.hero-left p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-bottom: 30px;
+  color: #E8EDF2;
+  max-width: 600px;
+}
+
+/* Buttons container */
+.hero-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-bottom: 28px;
+}
+
+/* Main button
+   Uses Primary Blue */
+.btn-1 {
+  padding: 12px 36px;
+  font-weight: 700;
+  background-color: #1D6FA4;
+  border: none;
+  border-radius: 8px;
+  color: #FFFFFF;
+}
+
+/* Main button hover */
+.btn-1:hover {
+  background-color: #175880;
+}
+
+/* Secondary button
+   Uses transparent background with gold border */
+.btn-2 {
+  padding: 12px 36px;
+  font-weight: 700;
+  border: 1px solid #F5A623;
+  border-radius: 8px;
+  background-color: transparent;
+  color: #F5A623;
+}
+
+/* Secondary button hover */
+.btn-2:hover {
+  background-color: #F5A623;
+  color: #0D1B2A;
+  border-color: #F5A623;
+}
+
+/* Tags container
+   Added flex so tags stay grouped on the left side */
+.hero-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+/* Each feature tag
+   Styled using Charcoal + Gold + Soft White */
+.hero-tag {
+  background-color: #1A2535;
+  color: #E8EDF2;
+  border: 1px solid #F5A623;
+  padding: 8px 14px;
+  border-radius: 999px;
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+
+/* Right side */
+.hero-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Video frame
+   Added a styled box around the video for better design */
+.hero-video-wrapper {
+  width: 100%;
+  max-width: 620px;
+  background-color: #1A2535;
+  padding: 14px;
+  border-radius: 18px;
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.35);
+  border: 1px solid rgba(245, 166, 35, 0.25);
+}
+
+/* Video itself
+   Made it larger and cleaner */
+.hero-video {
+  width: 100%;
+  height: 360px;
+  object-fit: cover;
+  border-radius: 12px;
+  display: block;
+}
+
+/* Responsive design for tablets and smaller screens */
+@media (max-width: 991px) {
+  .hero-section {
+    padding: 60px 24px;
+  }
+
+  .hero-left {
+    padding-right: 0;
+    text-align: center;
+  }
+
+  .hero-left p {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hero-buttons {
+    justify-content: center;
+  }
+
+  .hero-tags {
+    justify-content: center;
+  }
+
+  .hero-left h1 {
+    font-size: 2.7rem;
+  }
+
+  .hero-video {
+    height: 300px;
+  }
+  .hero-right {
+    margin-top: 30px;
+  }
+}
+
+/* Smaller mobile screens */
+@media (max-width: 576px) {
+  .hero-left h1 {
+    font-size: 2.2rem;
+  }
+
+  .hero-left p {
+    font-size: 1rem;
+  }
+
+  .hero-video {
+    height: 220px;
+  }
+
+  .btn-1,
+  .btn-2 {
+    width: 100%;
+  }
+}

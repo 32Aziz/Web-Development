@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dicee</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Lobster&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="container">
+    <h1 id="title">Roll the Dice</h1>
+
+    <section class="dice-area">
+      <div class="player player-1">
+        <p>Player 1</p>
+        <p id="score1">Score: 0</p>
+        <img id="img-1" src="./sample/images/dice1.png" alt="Player 1 dice">
+      </div>
+
+      <div class="player player-2">
+        <p>Player 2</p>
+        <p id="score2">Score: 0</p>
+        <img id="img-2" src="./sample/images/dice2.png" alt="Player 2 dice">
+      </div>
+    </section>
+
+    <button onclick="rollDice()" class="roll-btn">Roll Dice 🎲</button>
+
+    <footer>
+      <p>www 🎲 Abdulaziz 🎲 com</p>
+    </footer>
+  </main>
+
+  <script src="action.js"></script>
+</body>
+</html>

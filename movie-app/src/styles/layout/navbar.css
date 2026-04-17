@@ -1,0 +1,86 @@
+/* Main navbar background */
+.custom-navbar {
+  background-color: #0D1B2A;
+  padding: 14px 0;
+  border-bottom: 1px solid rgba(245, 166, 35, 0.15);
+}
+
+/* Inner navbar spacing
+   Added left and right padding so content does not stick to the page edges */
+.navbar-container {
+  padding-left: 42px !important;
+  padding-right: 42px !important;
+}
+
+/* Brand text
+   Added a little space to the right by giving it small left margin */
+.brand {
+  margin: 0;
+  margin-left: 10px;
+  color: #FFFFFF !important;
+  font-size: 1.35rem;
+  font-weight: 700;
+  letter-spacing: 0.3px;
+}
+
+/* Group of links
+   Added margin-right so the nav group moves slightly left from the far edge */
+.nav-links {
+  gap: 10px;
+  align-items: center;
+  margin-right: 140px;
+}
+
+/* Navbar links */
+.nav-links .nav-link {
+  color: #E8EDF2 !important;
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 8px 14px !important;
+  border-radius: 8px;
+  transition: all 0.25s ease;
+}
+
+/* Hover state */
+.nav-links .nav-link:hover {
+  color: #FFFFFF !important;
+  background-color: rgba(29, 111, 164, 0.18);
+}
+
+/* Active page link
+   NavLink automatically adds the active class */
+.nav-links .nav-link.active {
+  color: #FFFFFF !important;
+  background-color: #1D6FA4;
+}
+
+/* Navbar toggle button */
+.navbar-toggler {
+  border-color: rgba(245, 166, 35, 0.35) !important;
+}
+
+/* Tablet and mobile */
+@media (max-width: 991px) {
+  .custom-navbar {
+    padding: 12px 0;
+  }
+
+  .navbar-container {
+    padding-left: 18px !important;
+    padding-right: 18px !important;
+  }
+
+  .brand {
+    margin-left: 0;
+  }
+
+  .nav-links {
+    margin-right: 0;
+    margin-top: 14px;
+    gap: 6px;
+  }
+
+  .nav-links .nav-link {
+    text-align: center;
+  }
+}
